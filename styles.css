@@ -79,6 +79,7 @@ header {
 }
 
 body {
+    text-align: center;
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: var(--main-font);
