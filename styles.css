@@ -182,39 +182,11 @@ footer {
     text-align: left;
 }
 
-.sidebar {
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.webring {
-    all: unset !important;
-    font-style: normal !important;
-    font-size: 90%;
-    text-align<: center;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-}
-
 img {
     max-width: 100%;
     height: auto;
 }
 
-.strava-widget {
-    width: 100%;
-    border: none;
-    overflow: hidden;
-}
-
-.lastfm-widget {
-    width: 100%;
-    border: none;
-    overflow: hidden;
-}
 @media screen and (max-width: 768px) {
     .container {
         flex-direction: column;
