@@ -1,0 +1,233 @@
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
+:root {
+  --bg-color: #000000; /* Christmas red: #990000; Default dark: #181A1B; Default light: #FFFFFF; gruvbox dark: #282828;*/
+  --text-color: #7DF9FF; /* Christmas green: #28CD41; Default dark: E8E6E3; Defautl light: #000000; Terminal green: #28FE14; Amber: #FFCC02;*/
+  --header-font: 'Terminess Nerd Font', 'Zpix', sans-serif;
+  --main-font: 'ProggyClean Nerd Font', 'Times New Roman', 'Symbols Nerd Font Mono', sans-serif;
+  --footer-font: 'Silkscreen', serif;
+}
+
+
+@font-face {
+    font-family: 'Terminess Nerd Font';
+    src: url('https://kirito139.github.io/stash/fonts/TerminessNerdFont-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Terminess Nerd Font';
+    src: url('https://kirito139.github.io/stash/fonts/TerminessNerdFont-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Terminess Nerd Font';
+    src: url('https://kirito139.github.io/stash/fonts/TerminessNerdFont-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Terminess Nerd Font';
+    src: url('https://kirito139.github.io/stash/fonts/TerminessNerdFont-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ProggyClean Nerd Font';
+    src: url('https://kirito139.github.io/stash/fonts/ProggyCleanNerdFont-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GohuFont uni11 Nerd Font';
+    src: url('https://kirito139.github.io/stash/fonts/GohuFont11NerdFont-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Zpix';
+    src: url('https://kirito139.github.io/stash/fonts/zpix.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: '3270';
+    src: url('https://kirito139.github.io/stash/fonts/3270NerdFont-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Silkscreen';
+    src: url('https://kirito139.github.io/stash/fonts/slkscr.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Silkscreen';
+    src: url('https://kirito139.github.io/stash/fonts/slkscrb.ttf') format('truetype');
+    font-weight: bold;
+    font-style: bold;
+}
+
+header {
+    text-align: center;
+    font-family: var(--header-font);
+    font-weight: normal;
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: unset;
+    font-smooth: never;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--main-font);
+    font-weight: normal;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: unset;
+    font-smooth: never;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neigbor;
+}
+@media screen and (min-width: 601px) {
+    body:before {
+        content: "";
+        position: fixed;
+        opacity: 0.2;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 1000;
+        background-image: url(https://raw.githubusercontent.com/Kirito139/stash/refs/heads/main/images/overlay.png);
+        background-repeat: all;
+        background-position: 0px 0px;
+        animation-name: Static;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: steps(4);
+        box-shadow: inset 0px 0px 10em rgb(0 0 0 / 40%);
+    }
+
+    body:after {
+        content: "";
+        position: fixed;
+        left: 0;
+        top: 0;
+        opacity: 0.5;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 1000;
+        background-image: url(https://raw.githubusercontent.com/Kirito139/stash/refs/heads/main/images/overlay2.png);
+        background-repeat: all;
+        background-position: 0px 0px;
+        animation-name: Static;
+        animation-duration: 0.8s;
+        animation-iteration-count: infinite;
+        animation-timing-function: steps(4);
+    }
+}
+@keyframes Static {
+    0% {
+        background-position: 0px 0px;
+    }
+    100% {
+        background-position: 0px 4px;
+    }
+}
+
+pre {
+    text-align: center;
+  font-family: 'GohuFont uni11 Nerd Font', sans-serif;
+  font-size: 11px;
+  color: #28FE14;
+}
+
+footer {
+    font-family: var(--footer-font) !important;
+    font-style: normal;
+    font-size: 8px;
+    text-align: center;
+    padding: 20px;
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: unset;
+    font-smooth: never;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neigbor;
+    color: inherit;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main-content {
+    flex: 1;
+    margin-right: 20px;
+    text-align: left;
+}
+
+.sidebar {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.webring {
+    all: unset !important;
+    font-style: normal !important;
+    font-size: 90%;
+    text-align<: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.strava-widget {
+    width: 100%;
+    border: none;
+    overflow: hidden;
+}
+
+.lastfm-widget {
+    width: 100%;
+    border: none;
+    overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .main-content {
+        margin-right: 0;
+    }
+}
+
+
